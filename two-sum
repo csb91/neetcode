@@ -1,0 +1,15 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        #create hashmap for val and index
+        #iterate through array
+            #check if difference of target and current val exists in hasmap
+              #if it does return the current index and the correspoding hashmap index
+            #add current val and index to hashmap
+
+        prevMap = {} # val:ind
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            prevMap[n] = i
+        return
